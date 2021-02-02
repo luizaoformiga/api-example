@@ -15,7 +15,10 @@ function show(users)  {
    let output = '';
 
    for (let user of users) {
-    output += `<p>${user.name}</p>`;
+    output += `
+    <p>${user.id}</p>\n
+    <p>${user.type}</p>\n
+    <p>${user.oponents.classification}</p>`;
    }
 
    const main = document.getElementById('#getContent');

@@ -10,8 +10,8 @@ app.get('/', (request, response) => response.json([
     {
         "id": 1,
         "type": "duel",
-        "Status": "undefined",
-        "oponents": [
+        "Status": "winner",
+        "oponents": 
             {
                 "number": 1,
                 "position": 1,
@@ -20,8 +20,7 @@ app.get('/', (request, response) => response.json([
                 "forfeit": false,
                 "pontuation": 15,
                 "proprity": {}
-            }
-        ],
+            },
         "proprity": {}
     }
 ]))
