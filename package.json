@@ -1,6 +1,5 @@
 {
   "version": "1.0.0",
-  "description": "Mostrar como se faz uma API com JS e HTML",
   "main": "server.js",
   "scripts": {
     "dev": "npx lite-server",

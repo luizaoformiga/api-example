@@ -1,6 +1,8 @@
+import 'dotenv/config';
+
 async function getContent() {
     try {
-       const response = await fetch('http://localhost:8009');
+       const response = await fetch(process.env.PORT);
        const data = await response.json();
     
        show(data);
