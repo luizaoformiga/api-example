@@ -1,9 +1,12 @@
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import 'dotenv/config';
+import cors from 'cors';
 
 const app = express();
-const port = 8009;
+const port = process.env.PORT || 8009;
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 app.get('/', (request, response) => response.json([
@@ -25,4 +28,4 @@ app.get('/', (request, response) => response.json([
     }
 ]))
 
-app.listen(port, () => console.log('API listering to port http://localhost:8009'));
+app.listen(port, () => console.log(`API listering to port: ${port}`));
